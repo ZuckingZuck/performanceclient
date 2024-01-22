@@ -12,7 +12,7 @@ const Services = () => {
         {service?.services?.map((item) => {
           return (
             <NavLink key={item._id} to={`/s/${item.SlugUrl}`} className="services-container-box">
-              <img className="text-center h-20 w-20 object-contain" alt="robocode" src={item.ImageUrl} />
+              <img loading="lazy" className="text-center h-20 w-20 object-contain" alt="robocode" src={item.ImageUrl} />
               <h3 className="text-center">{item.ServiceTitle}</h3>
             </NavLink>
           );

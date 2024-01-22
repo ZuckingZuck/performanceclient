@@ -15,7 +15,7 @@ const SinglePost = (props) => {
   return (
     <div className="flex rounded flex-col md:flex-row bg-gray-800" style={postStyle}>
       <div className="md:w-1/2">
-        <img className="w-full h-64 md:h-full rounded object-cover" src={props.coverImageUrl} alt="" />
+        <img loading="lazy" className="w-full h-64 md:h-full rounded object-cover" src={props.coverImageUrl} alt="" />
       </div>
       <div className="flex flex-col md:w-1/2 p-3 rounded mt-3 md:mt-0">
         <div className="card-header mb-3 flex flex-col justify-between border-white">

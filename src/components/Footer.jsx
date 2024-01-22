@@ -33,6 +33,7 @@ const Footer = () => {
                     className="w-14 h-14 p-3 hover:scale-110 transition"
                     src={item.iconUrl}
                     alt={item.name}
+                    loading="lazy"
                   />
                 </a>
               );

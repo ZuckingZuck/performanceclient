@@ -12,6 +12,7 @@ const Applications = () => {
             <img
               width={20}
               height={20}
+              loading="lazy"
               alt="robocode"
               src={
                 "assets/edu.webp"
@@ -25,6 +26,7 @@ const Applications = () => {
             <img
               width={20}
               height={20}
+              loading="lazy"
               alt="robocode"
               src={
                 "assets/join.webp"

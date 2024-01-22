@@ -47,22 +47,22 @@ const Footer = () => {
             Kurumsal
           </h4>
           <ul>
-            <li className="footer-hover">
+            <li className="footer-hover text-xl">
               <NavLink to="/sss" className="text-gray-400 hover:text-white">
                 Hedeflerimiz
               </NavLink>
             </li>
-            <li className="footer-hover">
+            <li className="footer-hover text-xl">
               <NavLink to="/sss" className="text-gray-400 hover:text-white">
                 SSS
               </NavLink>
             </li>
-            <li className="footer-hover">
+            <li className="footer-hover text-xl">
               <NavLink to="/" className="text-gray-400 hover:text-white">
                 Blog Yazıları
               </NavLink>
             </li>
-            <li className="footer-hover">
+            <li className="footer-hover text-xl">
               <NavLink to="/contact" className="text-gray-400 hover:text-white">
                 İletişim
               </NavLink>
@@ -76,7 +76,7 @@ const Footer = () => {
           <ul>
             {services?.map((item) => {
               return (
-                <li key={item._id} className="footer-hover">
+                <li key={item._id} className="footer-hover text-xl">
                   <NavLink
                     to={`/s/${item.SlugUrl}`}
                     className="text-gray-400 hover:text-white"

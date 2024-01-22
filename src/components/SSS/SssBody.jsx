@@ -38,6 +38,7 @@ const SssBody = () => {
       {faq?.faqs?.map((item) => {
         return (
           <AccordionItem
+            key={item._id}
             title={item.question}
             content={item.answer}
           />

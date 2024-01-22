@@ -7,6 +7,11 @@ const Footer = () => {
   const services = useSelector((state) => state.service.services);
   const location = useLocation().pathname;
 
+  const handleNavLinkClick = () => {
+    // Sayfa geçişini gerçekleştirirken scroll pozisyonunu sıfırla
+    window.scrollTo(0, 0);
+  };
+
   if (
     location === "/login" ||
     location === "/register" ||
@@ -47,23 +52,27 @@ const Footer = () => {
             Kurumsal
           </h4>
           <ul>
-            <li className="footer-hover text-xl">
-              <NavLink to="/sss" className="text-gray-400 hover:text-white">
+            <li className="footer-hover text-xl mb-3">
+              <NavLink
+                to="/sss"
+                className="text-gray-400 hover:text-white"
+                onClick={handleNavLinkClick}
+              >
                 Hedeflerimiz
               </NavLink>
             </li>
-            <li className="footer-hover text-xl">
-              <NavLink to="/sss" className="text-gray-400 hover:text-white">
+            <li className="footer-hover text-xl mb-3">
+              <NavLink to="/sss" className="text-gray-400 hover:text-white" onClick={handleNavLinkClick}>
                 SSS
               </NavLink>
             </li>
-            <li className="footer-hover text-xl">
-              <NavLink to="/" className="text-gray-400 hover:text-white">
+            <li className="footer-hover text-xl mb-3">
+              <NavLink to="/" className="text-gray-400 hover:text-white" onClick={handleNavLinkClick}>
                 Blog Yazıları
               </NavLink>
             </li>
-            <li className="footer-hover text-xl">
-              <NavLink to="/contact" className="text-gray-400 hover:text-white">
+            <li className="footer-hover text-xl mb-3">
+              <NavLink to="/contact" className="text-gray-400 hover:text-white" onClick={handleNavLinkClick}>
                 İletişim
               </NavLink>
             </li>
@@ -76,10 +85,11 @@ const Footer = () => {
           <ul>
             {services?.map((item) => {
               return (
-                <li key={item._id} className="footer-hover text-xl">
+                <li key={item._id} className="footer-hover mb-3 text-xl">
                   <NavLink
                     to={`/s/${item.SlugUrl}`}
                     className="text-gray-400 hover:text-white"
+                    onClick={handleNavLinkClick}
                   >
                     {item.ServiceTitle}
                   </NavLink>

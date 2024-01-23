@@ -15,7 +15,7 @@ const Applications = () => {
               loading="lazy"
               alt="robocode"
               src={
-                "assets/edu.webp"
+                "assets/sonresim/edu.webp"
               }
             />
             <h3>Kursiyer Ol</h3>
@@ -24,12 +24,12 @@ const Applications = () => {
         <div>
           <NavLink to="/team-application" className="services-container-box">
             <img
-              width={20}
+              width={15}
               height={20}
               loading="lazy"
               alt="robocode"
               src={
-                "assets/join.webp"
+                "assets/sonresim/join.webp"
               }
             />
             <h3>Ekibimize Katıl</h3>
